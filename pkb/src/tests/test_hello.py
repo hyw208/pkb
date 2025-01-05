@@ -1,6 +1,6 @@
 import pytest 
 
-from hello import main
+from pkb.hello import main
 
 def test_main():
     x = 'xxx'
