@@ -1,7 +1,7 @@
 [project]
-name = "poetry102"
-version = "0.1.2"
-description = ""
+name = "pkb"
+version = "0.1.1"
+description = "Personal Knowledge Base"
 authors = [
     {name = "hyw208",email = "hyw208@gmail.com"}
 ]
