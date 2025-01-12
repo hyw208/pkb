@@ -10,8 +10,9 @@
 2. python -m venv .venv
 3. source .venv/bin/activate 
 4. pip install pkb 
+5. 
  
 
 # To Launch 
-
-5. uvicorn pkb.fast:app
+1. uvicorn pkb.fast:app
+2. 
