@@ -1,15 +1,9 @@
 from fastapi import FastAPI
 from pkb.utils.app import getApp
+from dotenv.main import load_dotenv
+load_dotenv()
 
 def app():
-    # _api = FastAPI()
-
-    # @_api.get("/")
-    # async def root():
-    #     return {"message": "Hello World"}
-
-    # return _api
-
     _app = getApp()
     return _app
 
