@@ -6,13 +6,14 @@
 
 
 # Installation 
-1. mkdir pkb && cd pkb
-2. python -m venv .venv
-3. source .venv/bin/activate 
-4. pip install pkb 
-5. 
- 
+1. git clone https://github.com/hyw208/pkb.git to get the 'content' folder and its md files
+2. cd pkb
+3. python -m venv .venv
+4. source .venv/bin/activate 
+5. pip install pkb 
+   
 
 # To Launch 
-1. uvicorn pkb.fast:app
-2. 
+1. python -m pkb.fast
+2. uvicorn pkb.fast:app (not working sometimes... fixing it)
+3. 
