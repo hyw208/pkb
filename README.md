@@ -1,5 +1,8 @@
 # Personal Knowledge Base
 
+# TODO 
+1. fix both launch issues where 'poetry install' has to be run multiple times
+2. 
 
 # Prerequisites
 1. Python >=3.12.7
@@ -14,6 +17,6 @@
    
 
 # To Launch 
-1. python -m pkb.fast
-2. uvicorn pkb.fast:app (not working sometimes... fixing it)
+1. python -m pkb.fast (sometimes doesn't work... need to run 'poetry install' many times)
+2. uvicorn pkb.fast:app (sometimes doesn't work... need to run 'poetry install' many times)
 3. 
