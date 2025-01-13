@@ -4,7 +4,7 @@ from whoosh.fields import Schema, TEXT, ID, KEYWORD
 from whoosh.index import create_in, open_dir, FileIndex
 from whoosh.qparser import QueryParser
 from whoosh.searching import Results
-from utils.logging import getLogging
+from pkb.utils.logging import getLogging
 logging = getLogging()
 
 md_schema = Schema(path=ID(stored=True), tags=KEYWORD, title=TEXT(stored=True), content=TEXT)

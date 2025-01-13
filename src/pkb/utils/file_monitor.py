@@ -1,5 +1,5 @@
 import time
-from utils.logging import getLogging
+from pkb.utils.logging import getLogging
 logging = getLogging()
 from watchdog.events import FileSystemEvent, FileSystemEventHandler
 from watchdog.observers import Observer
@@ -16,7 +16,7 @@ def get_observer(path):
     return observer
 
     # import time
-    # from utils.monitor import get_observer
+    # from pkb.utils.monitor import get_observer
     # observer = get_observer('content')
     # observer.start()
     # try:

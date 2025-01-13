@@ -1,6 +1,6 @@
 from fastapi import APIRouter
 from fastapi.responses import HTMLResponse
-from utils.files import get_html_content
+from pkb.utils.files import get_html_content
 
 router = APIRouter()
 

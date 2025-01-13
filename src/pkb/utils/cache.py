@@ -1,6 +1,6 @@
 import os
 from cachetools import TTLCache, cached
-from utils.logging import getLogging
+from pkb.utils.logging import getLogging
 logging = getLogging()
 
 cache_size = int(os.getenv('CACHE_SIZE', '100'))

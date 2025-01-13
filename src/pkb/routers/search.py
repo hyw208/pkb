@@ -1,5 +1,5 @@
 from fastapi import APIRouter
-from utils.logging import getLogging
+from pkb.utils.logging import getLogging
 logging = getLogging()
 
 router = APIRouter()

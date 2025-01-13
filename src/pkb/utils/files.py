@@ -1,11 +1,11 @@
 import os
 import markdown
-from jinja2 import Environment, FileSystemLoader
+from jinja2 import Environment, PackageLoader
 
-from utils.logging import getLogging
+from pkb.utils.logging import getLogging
 logging = getLogging()
 
-from utils.cache import getCache, getCached
+from pkb.utils.cache import getCache, getCached
 cached = getCached()
 cache = getCache()
 
@@ -20,7 +20,7 @@ header_items = os.getenv('HEADER_ITEMS', 'home,services,search,contact').split("
 logging.info(f"####### HEADER_ITEMS: {header_items} #######")
 
 # jinja templates
-environment = Environment(loader=FileSystemLoader("templates/"))
+environment = Environment(loader=PackageLoader("pkb", "templates/"))
 style = environment.get_template("style") # css styles
 header = environment.get_template("header") # to render horizontal nav panel
 folder = environment.get_template("folder") # to render folder panel
