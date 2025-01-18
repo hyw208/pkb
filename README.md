@@ -35,23 +35,34 @@ pip install pkb
 python -m pkb.fast
 
 // Or
-uvicorn pkb.fast:app
 
+uvicorn pkb.fast:app
 </pre>
 
 
 # Customize
-Change site name and restart
+Change site name by editing .env file, save and restart
 
 <pre>
-// in .env file, 
-WEBSITE_NAME="Markdown Website"
+WEBSITE_NAME="Change it"
 </pre>
 
-# TODO
-1. fix both launch issues where 'poetry install' has to be run multiple times
-2. 
+Change navigation items by editing .env file, save and restart,  
+<pre>
+// from
 
+HEADER_ITEMS=home,services,contact,about,search
+
+// to 
+
+HEADER_ITEMS=home,"new file 1",new_file_2,search
+</pre>
+
+ps. make sure to create files "new file 1.md" and "new_file_2.md" with some texts under 'content' folder
+
+
+# What's next? 
+Delete all files you don't need and start create your personal content and have fun~
 
 
 <!-- Styling --->
