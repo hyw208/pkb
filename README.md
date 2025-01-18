@@ -65,11 +65,7 @@ ps. make sure to create files "new file 1.md" and "new_file_2.md" with some text
 Delete all files you don't need and start create your personal content and have fun~
 
 
-<!-- Styling --->
-<style type="text/css">
-pre { 
-   color:white; 
-   background-color:grey;
-   padding:5px;
-}
-</style>
+
+
+
+
