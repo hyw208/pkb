@@ -1,6 +1,6 @@
 [project]
 name = "pkb"
-version = "0.1.4"
+version = "0.1.5"
 description = "Personal Knowledge Base"
 authors = [
     {name = "hyw208",email = "hyw208@gmail.com"}
