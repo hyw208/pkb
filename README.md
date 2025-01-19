@@ -1,71 +1,101 @@
-# Personal Knowledge Base
-Organize personal information with markdown files, folders and search
+# Personal Knowledge Base (PKB)
 
+A tool to organize your personal information using markdown files, folders, and search functionality.
 
-# Prerequisites
-- Python >=3.12.7
+## Prerequisites
 
+- Python 3.12.7 or higher
 
-# Installation 
-Create a knowledge base folder, eg. kb
+## Installation
 
-<pre>
-mkdir kb && cd kb
-</pre>
+1.  **Create a Knowledge Base Directory:**
+    Start by creating a directory for your knowledge base (e.g., `kb`) and navigate into it:
 
-Get content folder and .env file for customization later
+    ```bash
+    mkdir kb && cd kb
+    ```
 
-<pre>
-git clone https://github.com/hyw208/pkb.git
-cp -R ./pkb/content .
-cp .env .
-</pre>
+2.  **Clone the PKB Repository:**
+    Clone the PKB repository to get the necessary content folder and `.env` file:
 
-Create/activate virtual environment and install pkb lib
+    ```bash
+    git clone https://github.com/hyw208/pkb.git
+    ```
 
-<pre>
-python -m venv .venv
-source .venv/bin/activate
-pip install pkb
-</pre>
-   
+3.  **Copy Essential Files:**
+    Copy the `content` folder and `.env` file into your knowledge base directory:
 
-# Launch 
-<pre>
+    ```bash
+    cp -R ./pkb/content .
+    cp ./pkb/.env .
+    ```
+
+4.  **Set Up a Virtual Environment:**
+    Create and activate a virtual environment to manage dependencies:
+
+    ```bash
+    python -m venv .venv
+    source .venv/bin/activate
+    ```
+
+5.  **Install the PKB Library:**
+    Install the `pkb` library using pip:
+
+    ```bash
+    pip install pkb
+    ```
+
+## Launching the PKB
+
+You can launch the PKB using either of the following methods:
+
+**Method 1: Using the `pkb.fast` Module**
+
+```bash
 python -m pkb.fast
+```
 
-// Or
+**Method 2: Using `uvicorn`**
 
+```bash
 uvicorn pkb.fast:app
-</pre>
+```
 
+## Customization
 
-# Customize
-Change site name by editing .env file, save and restart
+You can customize your PKB by modifying the `.env` file. After making changes, save the file and restart the PKB to apply them.
 
-<pre>
-WEBSITE_NAME="Change it"
-</pre>
+**Changing the Site Name**
 
-Change navigation items by editing .env file, save and restart,  
-<pre>
-// from
+To change the site name, modify the `WEBSITE_NAME` variable in the `.env` file:
 
+```bash
+WEBSITE_NAME="Your New Site Name"
+```
+
+**Changing Navigation Items**
+
+To change the navigation items, modify the `HEADER_ITEMS` variable in the `.env` file. The values should correspond to the names of the markdown files in your `content` folder.
+
+**Example:**
+
+```bash
+# From:
 HEADER_ITEMS=home,services,contact,about,search
 
-// to 
-
+# To:
 HEADER_ITEMS=home,"new file 1",new_file_2,search
-</pre>
+```
+**Note:** 
 
-ps. make sure to create files "new file 1.md" and "new_file_2.md" with some texts under 'content' folder
+Make sure to create markdown files (e.g., `new file 1.md` and `new_file_2.md`) with some content under the `content` folder.
 
+## What's Next?
 
-# What's next? 
-Delete all files you don't need and start create your personal content and have fun~
+Now that you have your PKB set up, you can:
 
+Delete any files you don't need from the `content` folder.
 
+Start creating your personal content using markdown files.
 
-
-
-
+Have fun exploring and organizing your knowledge!
