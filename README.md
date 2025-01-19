@@ -2,6 +2,11 @@
 
 A tool to organize your personal information using markdown files, folders, and search functionality.
 
+![PKG](screenshot.png)
+
+**Source Code:** [https://github.com/hyw208/pkb](https://github.com/hyw208/pkb)
+
+
 ## Prerequisites
 
 - Python 3.12.7 or higher
