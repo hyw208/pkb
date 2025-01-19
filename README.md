@@ -16,7 +16,7 @@ A tool to organize your personal information using markdown files, folders, and 
     ```
 
 2.  **Clone the PKB Repository:**
-    Clone the PKB repository to get the necessary content folder and `.env` file:
+    Clone the PKB repository to get the necessary `content` folder and `.env` file:
 
     ```bash
     git clone https://github.com/hyw208/pkb.git
@@ -60,6 +60,11 @@ python -m pkb.fast
 ```bash
 uvicorn pkb.fast:app
 ```
+
+## Accessing the PKB
+
+You can open a browser and access it using `http://0.0.0.0:8000` or `http://127.0.0.1:8000/` or `http://localhost:8000` 
+
 
 ## Customization
 
