@@ -1,17 +1,4 @@
-# md tutorial.md
-
-* [An Internal Link to /file2.md](/file2.md) 
-* [An Internal Link to /folder2/folder3](/folder2/folder3)
-
----
-__Advertisement :)__
-
-- __[pica](https://nodeca.github.io/pica/demo/)__ - high quality and fast image
-  resize in browser.
-- __[babelfish](https://github.com/nodeca/babelfish/)__ - developer friendly
-  i18n with plurals support and easy syntax.
-
-You will like those projects!
+# Markdown basics
 
 ---
 

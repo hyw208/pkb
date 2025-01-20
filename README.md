@@ -21,7 +21,7 @@ A tool to organize your personal information using markdown files, folders, and 
     ```
 
 2.  **Clone the PKB Repository:**
-    Clone the PKB repository to get the necessary `content` folder and `.env` file:
+    Clone the PKB repository to get the necessary `content` folder, `static` folder and `.env` file:
 
     ```bash
     git clone https://github.com/hyw208/pkb.git
@@ -32,6 +32,7 @@ A tool to organize your personal information using markdown files, folders, and 
 
     ```bash
     cp -R ./pkb/content .
+    cp -R ./pkb/static .
     cp ./pkb/.env .
     ```
 

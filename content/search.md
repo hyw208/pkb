@@ -1,6 +1,4 @@
-
-#### title: a search tool
-#### tags: search tool 
+# TBD Search Capability
 
 <h2>Search with Woosh~</h2>
 
