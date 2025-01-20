@@ -1,6 +1,11 @@
 <div class="container">
     <div class="folder">
-        <p>folder: {{rel_scan_dir}}</p>
+        <p><a href="/">folder:</a>
+        {% for link, token in rel_scan_dir_pairs %}
+            /<a href="{{link}}">{{token}}</a>
+        {% endfor %}   
+        </p>
+        <!-- <p>folder: {{rel_scan_dir}}</p> -->
         {{folder}}
     </div>
     <div class="file">

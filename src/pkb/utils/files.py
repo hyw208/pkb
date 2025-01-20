@@ -111,8 +111,13 @@ def get_html_content(file_path):
         else file.render(file_content=markdown.markdown(file_content))
     logging.debug("####### " + _file + "####### ")
     
+    # 
+    tokens = [str(token) for token in rel_scan_dir.split("/") if token]
+    links = [f"/{'/'.join(tokens[:i+1])}" for i in range(len(tokens))]
+    rel_scan_dir_pairs = [(link, token) for link, token in zip(links, tokens)]
+    
     # now render all 
-    _body = body.render(rel_scan_dir=rel_scan_dir, file_name=file_name, folder=_folder, file=_file)
+    _body = body.render(rel_scan_dir_pairs=rel_scan_dir_pairs, rel_scan_dir=rel_scan_dir, file_name=file_name, folder=_folder, file=_file)
     _html = html.render(style=_style, header=_header, body=_body)
     return _html
 
